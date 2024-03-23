@@ -1,13 +1,19 @@
 package openprotocol.packet;
 
 public class Packet {
-	private String name;
+	private final Direction direction;
+	private final String name;
 
-	public Packet(String name) {
+	public Packet(Direction direction, String name) {
+		this.direction = direction;
 		this.name = name;
 	}
 
 	public final String packetName() {
 		return name;
+	}
+
+	public Direction packetDirection() {
+		return direction;
 	}
 }

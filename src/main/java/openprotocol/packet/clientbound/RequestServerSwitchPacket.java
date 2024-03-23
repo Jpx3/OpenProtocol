@@ -1,19 +1,17 @@
 package openprotocol.packet.clientbound;
 
-import openprotocol.packet.PacketAttribute;
+import openprotocol.packet.Direction;
 import openprotocol.packet.Packet;
 
-public class ServerSwitchPacket extends Packet {
-	@PacketAttribute(name = "domain")
+public class RequestServerSwitchPacket extends Packet {
 	private String domain;
-	@PacketAttribute(name = "port")
 	private int port;
 
-	public ServerSwitchPacket() {
-		super("SERVER_SWITCH");
+	public RequestServerSwitchPacket() {
+		super(Direction.CLIENTBOUND, "SERVER_SWITCH");
 	}
 
-	public ServerSwitchPacket(String domain, int port) {
+	public RequestServerSwitchPacket(String domain, int port) {
 		this();
 		this.domain = domain;
 		this.port = port;
