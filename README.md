@@ -1,4 +1,4 @@
-# OpenProtocol
+# OpenProtocol (proposal)
 
 OpenProtocol is an addition for the Minecraft server-client protocol,
 adding a rich feature set, making cheating more difficult and allowing recent additions to the protocol to be backwards compatible.
@@ -37,13 +37,14 @@ more ingame features, fewer incorrect detections by anticheats.
 
 #### For servers
 Less performance required by simulation-based anticheats + fewer false positives,
-more customizations for players, fewer cheaters and significantly less bandwidth.
+more customizations for players, fewer cheaters and significantly less bandwidth usage.
 
 
 ### Implementation
 
 
 #### For clients
+Forge mod?
 
 #### For servers
 
